@@ -15,18 +15,36 @@ p {
   line-height: 2rem;
 }
 
+.img-logo{
+  width: 15%;
+  height: 15%;
+}
+
 .sidenav-trigger {
   color: #26a69a;
+}
+
+.icon{
+  width: 50%;
+  height: 50%;
 }
 
 .parallax-container {
   min-height: 380px;
   line-height: 0;
-  height: auto;
+  height: 600px;
   color: rgba(255,255,255,.9);
+  position: relative;
 }
   .parallax-container .section {
     width: 100%;
+  }
+  .parallax_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: georgia,palatino,book antiqua,palatino linotype,serif;
   }
 
 @media only screen and (max-width : 992px) {
