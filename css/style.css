@@ -18,6 +18,7 @@ p {
 .img-logo{
   width: 15%;
   height: 15%;
+  margin-top: 5px;
 }
 
 .sidenav-trigger {
@@ -32,7 +33,6 @@ p {
 .parallax-container {
   min-height: 380px;
   line-height: 0;
-  height: 600px;
   color: rgba(255,255,255,.9);
   position: relative;
 }
@@ -55,11 +55,41 @@ p {
   #index-banner .section {
     top: 10%;
   }
+  #logo-container{
+    text-align: center;
+  }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 768px) {
+  .parallax-container .section{
+    position: absolute;
+    height: 600px;
+  }
   #index-banner .section {
-    top: 0;
+    top: 10%;
+  }
+  #logo-container{
+    text-align: center;
+  }
+  .img-logo{
+    width: 15%;
+    height: 15%;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .parallax-container .section{
+    position: absolute;
+    height: 600px;
+  }
+  #logo-container{
+    text-align: center;
+  }
+  .img-logo{
+    width: 20%;
+    height: 20%;
+    margin-top: 0.6rem;
   }
 }
 
