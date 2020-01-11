@@ -112,7 +112,7 @@
       <div class="row">
         <div class="col s12 center">
             <h2 class="header red-text">Meet the chef!</h2>
-            <div id="chefCard" class="card horizontal">
+            <div id="chefCard" class="card horizontal valign-wrapper">
               <div class="card-image responsive-img">
                 <img src="img/IMG_20190302_152527.webp">
               </div>
@@ -193,9 +193,9 @@
 
       $window.resize(resize = () => {
         if($window.width() < 768){
-          card.removeClass("horizontal");
+          card.removeClass("horizontal valign-wrapper");
         }else if($window.width() >= 768){
-          card.addClass("horizontal");
+          card.addClass("horizontal valign-wrapper");
         }
       });
     });
