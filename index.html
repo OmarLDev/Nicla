@@ -41,7 +41,7 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="./background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="./img/photo-1516001784377-938d72d1e4ab.jfif" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -187,16 +187,23 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript">
-    $(document).ready(() => {
+    $(document).ready(function(){
       var $window = $(window);
       var card = $("#chefCard");
+      
+      function checkWidth(){
+        console.log("function clal");
+        if($window.width() < 768){
+          card.toggleClass("horizontal valign-wrapper");
+        }else if($window.width() >= 768){
+          card.toggleClass("horizontal valign-wrapper");
+        }
+      }
+
+      checkWidth();
 
       $window.resize(resize = () => {
-        if($window.width() < 768){
-          card.removeClass("horizontal valign-wrapper");
-        }else if($window.width() >= 768){
-          card.addClass("horizontal valign-wrapper");
-        }
+        checkWidth();
       });
     });
   </script>
