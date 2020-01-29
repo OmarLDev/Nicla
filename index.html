@@ -41,7 +41,7 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="./img/photo-1516001784377-938d72d1e4ab.jfif" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="./background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -112,7 +112,7 @@
       <div class="row">
         <div class="col s12 center">
             <h2 class="header red-text">Meet the chef!</h2>
-            <div id="chefCard" class="card valign-wrapper">
+            <div id="chefCard" class="card horizontal valign-wrapper">
               <div class="card-image responsive-img">
                 <img src="img/IMG_20190302_152527.webp">
               </div>
@@ -193,10 +193,10 @@
       
       function checkWidth(){
         console.log("function clal");
-        if($window.width() <= 768){
-          card.toggleClass("horizontal");
+        if($window.width() < 768){
+          card.removeClass("horizontal valign-wrapper");
         }else if($window.width() >= 768){
-          card.toggleClass("horizontal");
+          card.addClass("horizontal valign-wrapper");
         }
       }
 
