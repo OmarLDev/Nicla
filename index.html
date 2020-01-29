@@ -112,7 +112,7 @@
       <div class="row">
         <div class="col s12 center">
             <h2 class="header red-text">Meet the chef!</h2>
-            <div id="chefCard" class="card horizontal valign-wrapper">
+            <div id="chefCard" class="card valign-wrapper">
               <div class="card-image responsive-img">
                 <img src="img/IMG_20190302_152527.webp">
               </div>
@@ -193,10 +193,10 @@
       
       function checkWidth(){
         console.log("function clal");
-        if($window.width() < 768){
-          card.toggleClass("horizontal valign-wrapper");
+        if($window.width() <= 768){
+          card.toggleClass("horizontal");
         }else if($window.width() >= 768){
-          card.toggleClass("horizontal valign-wrapper");
+          card.toggleClass("horizontal");
         }
       }
 
